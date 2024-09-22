@@ -1,0 +1,313 @@
+:root {
+    --color1: rgba(136, 17, 53, 1); /* Color 1 */
+    --color2: rgba(224, 0, 67, 1); /* Color 2 */
+    --color3: rgba(255, 250, 254, 1); /* Color 3 */
+    --color4: rgba(0, 0, 0, 1); /* Color negro */
+    --color5: #ffffff; /* Color blanco */
+}
+
+
+/* Sobreescribir la clase btn-primary de Bootstrap */
+a.btn.btn-primary {
+    background-color: var(--color2); /* Cambiar el color de fondo */
+    border-color: var(--color2); /* Cambiar el color del borde */
+    color: var(--color5); /* Cambiar el color del texto */
+}
+
+/* Cambiar el color cuando el botón está en hover */
+a.btn.btn-primary:hover {
+    background-color: var(--color2); /* Cambiar el color al pasar el mouse */
+    border-color: var(--color2); /* Cambiar el color del borde en hover */
+}
+
+.fondo{
+    background-color:var(--color3);
+}
+
+#deconav {
+    background-color: var(--color1);
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0;
+    width:100%;
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    color: var(--color5);
+}
+
+.deco {
+    text-decoration: none;
+    color: var(--color5);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--color3); 
+}
+
+nav ul li a:active {
+    color: var(--color3); 
+}
+
+nav ul li a:visited {
+    color: var(--color3); 
+}
+
+.linkedin{
+    color: var(--color2);
+}
+
+.linkedin:hover{
+    color: var(--color1);
+}
+
+.contenido {
+    margin-top: 80px; 
+    padding: 20px;
+}
+
+.titulos{
+    font-size: 60px;
+    color: var(--color2);
+    text-align: center;
+    font-weight: bold;
+}
+
+.tituloscv {
+    color: var(--color1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.titulocompetencias{
+    color: var(--color1);
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.texto1{
+    color: var(--color1);
+    text-align: left;
+}
+
+.texto2{
+    color: var(--color1);
+    text-align: center;
+}
+
+.titulo3{
+    color: var(--color2);
+    text-decoration: underline;
+}
+
+.alider{
+text-align: right;
+}
+
+.aliizq{
+    text-align: left;
+}
+
+.textocom{
+    text-align: left;
+}
+
+.textohab {
+    list-style-position: inside; /* Coloca los puntos dentro del contenido del li */
+    padding-right: 0; /* Elimina el padding por defecto */
+    margin-right: 0; /* Elimina el margen por defecto */
+}
+
+.textohab li {
+    text-align: right; 
+}
+.colorcont{
+    color: var(--color2);
+}
+
+#decofoot{
+    background-color: var(--color1); 
+    position:fixed; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    width: 100%; 
+    padding: 2px 0; 
+    padding-top: 0;
+    z-index: 1000; 
+    text-align: center; 
+    font-size: 12px; 
+    color: var(--color5);
+}
+
+.fondito {
+    background-color: rgba(224, 0, 67, 0.05); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(224, 0, 67, 0.1); 
+}
+
+.disposicion {
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.disposicion img {
+    margin-right: 20px; 
+    width: 400px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cont1 {
+    display: flex; 
+}
+
+.alineacionsobre {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 300px;
+    margin-left: 100px;
+}
+
+.alineacionsobre img {
+    width: 250px; 
+    height: auto;
+    align-content: center;
+}
+
+.texto2 {
+    flex: 1; 
+    font-size: 18px;
+}
+
+
+.grid-contenedor {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.seccion1 {
+    flex-basis: 50%;
+
+}
+
+.seccion2, .seccion3, .seccion4{
+    flex-basis: 30%;
+} /* no se como hacer para que la seccion 4 quede debajo de la seccion 2 y 3, pero que al mismo tiempo esten allado de la 1*/
+
+.fotos1, .fotos2 {
+    display: flex; /* Hacer que los elementos dentro se alineen horizontalmente */
+    gap: 10px; 
+}
+
+.fotos1 img {
+    max-width: 300px; 
+    height: auto; 
+    padding-bottom: 2%;
+    align-content: center;
+}
+
+.fotos2 img {
+    max-width: 300px; 
+    height: auto; 
+    padding-bottom: 5%;
+    align-content: right;
+    margin-left: 0;
+} /*no se como hacer para que queden en la "4ta columna" las dos fotos, una arriba y otra abajo*/
+
+.cont2 {
+    display: grid; /* Activar Grid */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 0; /* Espacio entre columnas */
+    width: 100%; /* Asegúrate de que el contenedor ocupe el 100% */
+    padding-bottom: 5%;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.dispocomp {
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.dispocomp img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */ /* como hacer para que quede mas pequeña y en el medio*/
+    height: auto; 
+}
+
+.dispocontacto{
+    display: flex;
+}
+
+
+.nav-bar .nav-list .nav-link {
+    color: var(--color5);
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.trabajos{
+    margin-top: 100px; /* Ajusta según la altura de tu barra de navegación */
+    text-align: center; /* Centra el título */
+    text-decoration: underline;
+}
+
+.nav-bar {
+    display: flex; /* Usar flexbox */
+    justify-content: flex-start; /* Alinear elementos a la izquierda */
+    align-items: center; /* Centrar verticalmente */
+    background-color: var(--color1);
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px; /* Aumenta el padding si es necesario */
+    z-index: 1000; 
+}
+
+.nav-list {
+    display: flex; /* Usar flexbox para los elementos de la lista */
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+}
+
+.linkstrabajos{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    color: var(--color4);
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    flex-direction: column; /* Asegúrate de que los links estén en una columna */
+}
+
+.linkstrabajos:hover {
+    color: var(--color2); 
+}
