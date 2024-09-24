@@ -20,6 +20,15 @@ a.btn.btn-primary:hover {
     border-color: var(--color2); /* Cambiar el color del borde en hover */
 }
 
+.botoncito {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: auto; /* O cualquier altura que desees */
+    padding: 0%;
+    margin: 0%;
+}
+
 .fondo{
     background-color:var(--color3);
 }
