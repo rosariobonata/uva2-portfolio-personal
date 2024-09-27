@@ -76,6 +76,10 @@ nav ul li a:visited {
     color: var(--color3); 
 }
 
+nav ul li a::before {
+    color: var(--color3); 
+}
+
 .linkedin{
     color: var(--color2);
 }
